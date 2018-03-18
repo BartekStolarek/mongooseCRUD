@@ -1,0 +1,28 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: aliceblue;
+  background-image: url('../images/background.png');
+}
+
+a {
+  color: #00B7FF;
+}
+
+.block {
+  background-color: cadetblue;
+  width: 275px;
+  padding: 20px;
+  float: left;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #888888;
+}
+.getBlock {
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 1px solid darkgray;
+}
+.input {
+  padding: 10px;
+}

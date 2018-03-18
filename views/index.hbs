@@ -1,0 +1,67 @@
+<div class="block">
+    <span style="font-size: 20px;"><strong>Insert Data</strong></span><br><br>
+    <form action="/insert" method="post">
+        <div class="input">
+            <label>Insert title:</label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div class="input">
+            <label>Insert content:</label>
+            <input type="text" id="content" name="content">
+        </div>
+        <div class="input">
+            <label>Insert author:</label>
+            <input type="text" id="author" name="author">
+        </div>
+        <button type="submit">Insert data</button>
+    </form>
+</div>
+
+<div class="block">
+    <span style="font-size: 20px;"><strong>Update Data</strong></span><br><br>
+    <form action="/update" method="post">
+        <div class="input">
+            <label>Insert ID which you want to replace:</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <div class="input">
+            <label>Insert title:</label>
+            <input type="text" id="title" name="title">
+        </div>
+        <div class="input">
+            <label>Insert content:</label>
+            <input type="text" id="content" name="content">
+        </div>
+        <div class="input">
+            <label>Insert author:</label>
+            <input type="text" id="author" name="author">
+        </div>
+        <button type="submit">Update data</button>
+    </form>
+</div>
+
+<div class="block">
+    <span style="font-size: 20px;"><strong>Delete Data</strong></span><br><br>
+    <form action="/delete" method="post">
+        <div class="input">
+            <label>Insert ID which you want to delete:</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <button type="submit">Delete</button>
+    </form>
+</div>
+
+<div class="block">
+    <span style="font-size: 20px;"><strong><a href="get-data">Get Data</a></strong></span>
+    <br><br>
+    <div>
+        {{# each items }}
+            <div class="getBlock">
+                <div><strong> Title: </strong> {{ this.title }}</div>
+                <div><strong> Content: </strong> {{ this.content }}</div>
+                <div><strong> Author: </strong> {{ this.author }}</div>
+                <div><strong> ID: </strong> {{ this.id }}</div>
+            </div>
+        {{/each}}
+    </div>
+</div>
